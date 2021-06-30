@@ -1,0 +1,60 @@
+samba clean SMB service
+https://hub.docker.com/r/dperson/samba
+
+Samba can act as a domain controller or join an NT domain but that is not supported with this configuration- File sharing
+https://hub.docker.com/r/stanback/alpine-samba
+
+
+Samba with Avahi- 
+https://hub.docker.com/r/servercontainers/samba/
+Avahi is a free Zero-configuration networking (zeroconf) implementation, including a system for multicast DNS/DNS-SD service discovery. It allows programs to publish and discover services and hosts running on a local network with no specific configuration. For example you can plug into a network and instantly find printers to print to, files to look at and people to talk to. It is licensed under the GNU Lesser General Public License (LGPL).
+
+
+Samba as DC domain controller with kerberos and scripts to update
+https://nowsci.com/
+https://github.com/Fmstrat/samba-domain
+https://hub.docker.com/r/nowsci/samba-domain/
+
+Samba as DC domain with server replication funccion 
+https://hub.docker.com/r/instantlinux/samba-dc
+
+
+Samba as DC for tests with kerberos and some useful scripts
+https://gitlab.triumf.ca/docker/samba-ad-dc
+
+
+===============================================================================================
+
+Configuring Samba DC server
+https://www.server-world.info/en/note?os=Debian_10&p=samba&f=4
+
+
+==============================================================================================
+Samba server DC definitions
+https://wiki.archlinux.org/title/Samba/Active_Directory_domain_controller
+https://wiki.samba.org/index.php/LDB#Active_Directory
+
+
+Algumas configurações adicionais podem ser aplicadas a imagem do nosso servidor, seguindo as configurações propostas 
+nesse tutorial 
+como por exemplo, habilitar o servidor de impressão e modificar padrões de autenticação
+
+==============================================================================================
+Descrição de serviços e vídeos sobre instalação do Samba
+
+https://mange.ifrn.edu.br/site/redes20191par/manual-asa/aulas/2020-12-04/index.html
+
+    DNS: Para resolução de nomes do domínio
+
+    LDAP: Serviço de catálogo com dados de usuários, grupos, computadores e impressoras
+
+    KERBEROS: Distribuição de chaves e bilhetes (tickets)
+
+    NTP: Sincronização de relógio entre as estações e o servidor
+
+    SMB/CIFS: Compartilhamento de pastas
+
+
+
+==============================================================================================
+

@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+    ldap:
+        image: osixia/openldap:1.5.0
+        container_name: great-ldap
+        ports:
+          - 8080:80            
+        env_file: 
+          .env
