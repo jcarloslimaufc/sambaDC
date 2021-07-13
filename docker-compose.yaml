@@ -9,7 +9,7 @@ services:
 # ----------- samba begin ----------- #
 
   samba:
-    image: nowsci/samba-domain
+    image:  nowsci/samba-domain
     container_name: samba
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -17,7 +17,7 @@ services:
       - /data/docker/containers/samba/config/samba:/etc/samba/external
     environment:
       - DOMAIN=CORP.EXAMPLE.COM
-      - DOMAINPASS=ThisIsMyAdminPassword
+      - DOMAINPASS=Teste@great
       - DNSFORWARDER=192.168.1.1
       - HOSTIP=192.168.1.222
     networks:
@@ -52,5 +52,6 @@ services:
       - /dev/net/tun
     privileged: true
     restart: always
+    #/bin/sh
 
 # ----------- samba end ----------- #
